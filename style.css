@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+}
+
+body {
+  background: black;
+  justify-content: center;
+}
+
+.thumbContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+}
+
+.thumbnails img {
+  height: 100px;
+  width: 150px;
+  gap: 10px;
+  border: 1px solid red;
+}
+
+.thumbnails button {
+  border: none;
+  background: transparent;
+}
+
+.displayContainer {
+  justify-content: center;
+}
+
+.displayImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.next {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: red;
+  padding: 6px 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  top: 50vh;
+  right: 5vw;
+}
+
+.next:hover {
+  border: black;
+  background: #ffffff;
+  font-style: bold;
+  color: #000000;
+}
+
+.prev {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: red;
+  top: 50vh;
+  left: 5vw;
+  padding: 6px 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.prev:hover {
+  border: black;
+  background: #ffffff;
+  font-style: bold;
+  color: #000000;
+}
+
+@media (max-width: 764px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    width: 100%;
+  }
+  h1 {
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+  }
+  body {
+    width: 100%;
+    background: black;
+  }
+  .thumbContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .thumbnails img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .displayImage {
+    display: none;
+  }
+  .next {
+    visibility: hidden;
+  }
+  .prev {
+    visibility: hidden;
+  }
+}

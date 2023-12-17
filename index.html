@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cyberpunk Inspired Street Photography</h1>
+        <div id="thumbContainer" class="thumbContainer">
+          <div class="thumbnails" id="images">
+            <button>
+              <img
+              id="image"
+              title="A dark city crossroads"
+              src="./images/CyberpunkScene1.avif"
+              alt="A dark city crossroads"
+              />
+            </button>
+            <button>
+              <img
+                id="image"
+                title="A red neon lit alley reflected in a puddle"
+                src="./images/CyberpunkScene2.avif"
+                alt="A red neon lit alley reflected in a puddle"
+              />
+            </button>
+            <button>
+              <img
+                id="image"
+                title="A narrow alley lit by a paper lantern in Japan"
+                src="./images/CyberpunkScene3.avif"
+                alt="A narrow alley lit by a paper lantern in Japan"
+              />
+            </button>
+            <button>
+              <img
+                id="image"
+                title="Looking down a street with horizontal light trails"
+                src="./images/CyberpunkScene4.avif"
+                alt="Looking down a street with horizontal light trails"
+              />
+            </button>
+            <button>
+              <img
+                id="image"
+                title="A tunnel illuminated by a single red light"
+                src="./images/CyberpunkScene5.avif"
+                alt="A tunnel illuminated by a single red light"
+              />
+            </button>  
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="displayContainer" class="displayContainer">
+        <div class="displayImage">
+          <img
+            id="displayImage"
+            src="./images/CyberpunkScene1.avif"
+            alt="A dark city crossroads"
+          />
+        </div>
+      </div>
+      <button id="nextButton" class="next" title="Go to the next picture">Next</button>
+      <button id="prevButton" class="prev" title="Go to the previous picture">Previous</button>
+    </main>
+  </body>
+</html>
